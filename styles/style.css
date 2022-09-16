@@ -44,14 +44,22 @@ ul{
 }
 
 /* button */
-.donate {
-  display: inline-flexbox;
-  cursor: pointer;
-  padding: 7px 16px;
-  border-radius: 30px;
-  color: #1F5F5B;
-  
+.donate-btn {
+
+  font-size: 0.9em;
+  border: 1px solid var(--white);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 10em;
+  padding: 10px 20px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  transition: 0.3s;
+  background: linear-gradient(#53817F, #82A09D);
+  margin-top: 44px;
+  margin-left: 66px;
 }
+
 
 
 /* Nav menu */
@@ -61,6 +69,7 @@ ul{
   position: fixed;
   background-color: var(--green);
   overflow: hidden;
+ 
 
 }
 .menu a{
@@ -120,6 +129,8 @@ ul{
 .side-menu:checked ~ nav{
   max-height: 100%;
 }
+
+
 .side-menu:checked ~ .hamb .hamb-line {
   background: transparent;
 }
@@ -154,4 +165,40 @@ ul{
   .hamb{
       display: none;
   }
+}
+
+
+#hero {
+  background-color: #1F5F5B;
+  color: var(--white);
+  height: 70vh;
+  padding: 0px 16px 20px 16px;
+  
+}
+
+#hero-header {
+  font-size: 40px;
+  padding-left: 43px;
+  padding-top: 81px;
+  padding-left: 35px;
+  font-weight: normal;
+}
+
+#hero-copy {
+  padding-top: 20px;
+  padding-left: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: 2 / span 3;
+  grid-column-end: 3;
+}
+
+
+.grid-container {
+ display: grid;
+ column-gap: 16px;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ gap: 16px;
+ box-sizing: border-box;
+
 }
