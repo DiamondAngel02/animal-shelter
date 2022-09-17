@@ -45,11 +45,10 @@ ul{
 
 /* button */
 .donate-btn {
-
   font-size: 0.9em;
   border: 1px solid var(--white);
-  color: var(--white);
-  text-decoration: none;
+  color: var(--white) !important;
+  text-decoration: none !important;
   border-radius: 10em;
   padding: 10px 20px;
   letter-spacing: 0.05em;
@@ -58,8 +57,9 @@ ul{
   background: linear-gradient(#53817F, #82A09D);
   margin-top: 19px;
   margin-left: 66px;
-}
 
+  
+}
 
 
 /* Nav menu */
@@ -145,17 +145,24 @@ ul{
 
 
 /* Responsiveness */
-@media (min-width: 768px) {
+@media (min-width: 1500px) {
   .nav{
       max-height: none;
       top: 0;
       position: relative;
       float: right;
       width: fit-content;
+     
   }
   .menu li{
       float: left;
   }
+
+ .menu a{
+  font-size: 25px;
+  padding: 21px;
+ }
+
   .menu a:hover{
       background-color: transparent;
       color: var(--gray);
@@ -167,6 +174,36 @@ ul{
   }
 }
 
+@media (min-width: 1600px) {
+  .nav{
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      display: block;
+     
+  }
+  .menu li{
+      float: left;
+     
+  }
+
+ .menu a{
+  font-size: 28px;
+  padding: 19px;
+ }
+
+  .menu a:hover{
+      background-color: transparent;
+      color: var(--gray);
+
+  }
+
+  .hamb{
+      display: none;
+  }
+}
 
 #hero {
   background-color: #1F5F5B;
