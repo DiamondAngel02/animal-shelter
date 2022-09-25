@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Shelter</title>
+
+    <link rel="stylesheet" href="../styles/donate.css">
+    <link rel="icon" href="images/paw.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Nav bar-->
+    <header class="header">
+        <!-- Logo-->
+        <a href="/index.html"><img id=logo src="../images/logo.png" alt="logo"></a>
+
+        <!-- Donate button -->
+        <a href="../pages/donate.html"><button class="donate-btn">DONATE</button></a>
+
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <!-- Menu-->
+        <nav class="nav">
+            <ul class="menu">
+                <li id="" class="menu_item"><a href="/index.html">HOME</a></li>
+                <li id="" class="menu_item"><a href="../pages/donate.html">DONATE</a></li>
+                <li id="" class="menu_item"><a href="../pages/news.html">NEWS / EVENTS</a></li>
+                <li id="" class="menu_item"><a href="../pages/adopt.html">ADOPT / FOSTER</a></li>
+                <li id="" class="menu_item"><a href="../pages/volunteer.html">VOLUNTEER</a></li>
+                <li id="" class="menu_item"><a href="../pages/about.html">ABOUT</a></li>
+                <li id="" class="menu_item"><a href="../pages/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Hero -->
+
+    <main>
+        <article id="hero">
+                 <h1 id="hero-header">
+                Donate to our animal shelter
+            </h1>
+           
+            <p id="hero-copy">
+                Help us save countless of dogs and give them a new loving home   </p>
+        
+        
+            <img class="slideshow" src="../images/happy-dog.png" alt="Happy dog">
+        <img class="slideshow" src="../images/vet-dog.png" alt="Dog at the vet">
+        <img class="slideshow" src="../images/dog-in-case.png" alt="Dog in a cage">
+
+        <p class="dot">...</p>
+    </article>
+    </main>
+
+    <!-- Donation form-->
+
+<form class="donation-form">
+<h2 class="thanks">Thank you for donating!</h2>
+<label for="amount">Amount</label>
+<input type="number" value="0.00">
+<button class="money-amount">500 ddk</button>
+<button class="money-amount">1000 ddk</button>
+<button class="money-amount">10.000 ddk</button>
+
+<h2 id="method">Select payment method</h2>
+<input class="drop-btn" type="checkbox" >
+
+
+<h2>Personal Info</h2>
+<input class="drop-btn" type="checkbox">
+
+<h2>Credit Card Info</h2>
+<input class="drop-btn" type="checkbox">
+
+<h2>Billing Details</h2>
+<input class="drop-btn" type="checkbox">
+<label class="arrow" for="drop-btn"></label>
+
+<!--
+    <img src="../images/newCaptchaAnchor.gif" alt="">
+-->
+<div class="donate-total">
+    <input type="text" value="Donation Total: 0.00 ddk">
+<input type="submit" value="DONATE NOW">
+</div>
+
+</form>
+
+<footer class="footer">
+<!-- Sign up-->
+<div class="signup">
+    <h3>Sign up for our newsletter!</h3>
+
+<p>Read our latest stories and upcoming events. As well as more volunteer opportunites and news!</p>
+</div>
+<div class="input">
+    <input type="text" value="Email">
+    <input type="submit" value="Subscribe">
+
+
+</div>
+
+
+
+<!-- contact info -->
+<div class="contact-info">
+  <p>
+    <span><b>Contact Us</b> </span>  <br><br>
+    Opening Hours <br>
+    Mon-Fri: 9am - 7pm<br>
+    Sat-Sun: 11am - 7pm <br> <br>
+    
+    Address:<br>
+    Nerdgade 8 <br>
+    2450 København SV<br> <br>
+    
+    If you want to contact us for <br>
+    further information:<br> <br>
+    
+    +45 000 000 000<br>
+    animalshelter@gmail.com<br>
+    </p>
+</div>
+
+<div id="cards">
+    <img  src="../images/cards.svg" alt="">
+</div>
+    
+   
+   <!-- links to social media-->
+   
+   <p id="follow">Follow us</p>
+<div class="social-icons">
+    <a class="social" href="#"><img src="../images/002-instagram 1.svg" alt=""></a>
+    <a class="social" href="#"><img src="../images/icons8-youtube-logo 1.svg" alt=""></a>
+    <a class="social" href="#"><img src="../images/004-facebook-app-logo 1.svg" alt=""></a>
+    <a class="social" href="#"><img src="../images/005-twitter 1.svg" alt=""></a>
+</div>
+   
+<div class="legal">
+    <a href="#">Legal terms</a> 
+    <a href="#">Terms of service</a> 
+    <a href="#">Privacy policy</a> 
+    <a href="#"> Cookies</a> 
+    <a href="#">FAQ</a> 
+    <a href="#"> Support</a> 
+
+</div>
+    
+    <p class="copywrite">&copy; 2022 All rights reserved</p>
+    
+</footer>
+
+
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slideshow");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+
+
+</script>
+</body>
+</html>

@@ -34,6 +34,7 @@ ul{
   position: sticky;
   top: 0;
   width: 100%;
+  background-color: var(--beige);
 }
 
 /* Logo */
@@ -47,13 +48,12 @@ ul{
 .donate-btn {
   font-size: 0.9em;
   border: 1px solid var(--white);
-  color: var(--white) !important;
-  text-decoration: none !important;
+  color: var(--white);
+  text-decoration: none;
   border-radius: 10em;
   padding: 10px 20px;
   letter-spacing: 0.05em;
   position: absolute;
-  transition: 0.3s;
   background: linear-gradient(#53817F, #82A09D);
   margin-top: 19px;
   margin-left: 66px;
@@ -224,18 +224,11 @@ ul{
 #hero-copy {
   padding-top: 20px;
   padding-left: 35px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column: 2 / span 3;
-  grid-column-end: 3;
+
 }
 
 
 .grid-container {
- display: grid;
- column-gap: 16px;
- grid-template-columns: 1fr 1fr 1fr 1fr;
- gap: 16px;
- box-sizing: border-box;
+  display: grid;
 
 }
