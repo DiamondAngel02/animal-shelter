@@ -220,6 +220,7 @@ ul{
     padding-top: 110px;
     padding-left: 0px;
     font-weight: normal;
+    color: var(--white);
   }
   
     #hero-copy {
@@ -229,6 +230,7 @@ ul{
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: var(--white);
   }
   
   .slideshow{
@@ -242,6 +244,7 @@ ul{
 .dot {
     text-align: center;
     font-size: 40px;
+    color: var(--white);
 }
 
 .donation-form{
@@ -359,3 +362,4 @@ font-size: 20px;
     justify-content: center;
     margin: auto; 
 }
+/* Footer end */
