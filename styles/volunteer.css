@@ -1,0 +1,303 @@
+/* Theming */
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+    --beige: #F1E8E6;
+    --green: #88A2A0;
+    --darkgreen: #53817F;
+    --pink: #EDD2CB;
+   
+} /* variables for the colors that will be used in the app */
+
+/* Reset to none*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--beige);
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* Header */
+.header{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--beige);
+}
+
+/* Logo */
+#logo {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+/* button */
+.donate-btn {
+  font-size: 0.9em;
+  border: 1px solid var(--white);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 10em;
+  padding: 10px 20px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  background: linear-gradient(#53817F, #82A09D);
+  margin-top: 19px;
+  margin-left: 66px;
+
+  
+}
+
+
+/* Nav menu */
+.nav{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--green);
+  overflow: hidden;
+ 
+
+}
+.menu a{
+  display: block;
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  color: var(--white);
+}
+.menu a:hover{
+  background-color: var(--darkgreen);
+  text-decoration: underline;
+}
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 37px 16px;
+}/* Style label tag */
+
+.hamb-line {
+  background: var(--black);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: var(--black);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+
+
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+/* Responsiveness */
+@media (min-width: 1500px) {
+  .nav{
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+     
+  }
+  .menu li{
+      float: left;
+  }
+
+ .menu a{
+  font-size: 25px;
+  padding: 21px;
+ }
+
+  .menu a:hover{
+      background-color: transparent;
+      color: var(--gray);
+
+  }
+
+  .hamb{
+      display: none;
+  }
+}
+
+@media (min-width: 1600px) {
+  .nav{
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      display: block;
+     
+  }
+  .menu li{
+      float: left;
+     
+  }
+
+ .menu a{
+  font-size: 28px;
+  padding: 19px;
+ }
+
+  .menu a:hover{
+      background-color: transparent;
+      color: var(--gray);
+
+  }
+
+  .hamb{
+      display: none;
+  }
+}
+
+/* Footer */
+
+.footer {
+    background: var(--pink);
+    padding: 16px;  
+  }
+  
+  .signup {
+    display: block;
+  }
+  
+  .signup h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 70px;
+  }
+  .signup p {
+    margin-right: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .input input[type="text"] {
+    width: 21.45rem;
+    height: 3rem;
+    padding-right: 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .input input[type="submit"] {
+    width: 103px;
+    height: 38px;
+    margin-left: -113px;
+    background-color: #5E8885;
+    color: var(--white);
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    box-shadow: 4px 4px 10px #C2BBB9;
+    cursor: pointer;
+  }
+  
+  .contact-info { 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+   
+  }
+  
+  #cards {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  #follow {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .social {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .legal {
+    padding-top: 20px;
+   
+  }
+  .legal a{
+    display: flex;
+    justify-content: center;
+    margin: auto; 
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+  }
+  
+  .copywrite {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin: auto; 
+  }
+  
+  /* Footer end */
