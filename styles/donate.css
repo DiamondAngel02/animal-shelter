@@ -255,6 +255,11 @@ ul{
    
 }
 
+.captcha {
+    height: 60px;
+
+}
+
 .thanks {
     margin: auto;
 
